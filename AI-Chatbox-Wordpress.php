@@ -184,7 +184,7 @@ add_shortcode('ai_chatbox', 'ai_chatbox_shortcode');
 
 // Handle AJAX request
 function ai_chatbox_handle_ajax() {
-    $api_key = 'YOUR_API_KEY_HERE'; // حتماً کلید API خود را وارد کنید
+    $api_key = 'YOUR_OPENAI_API_KEY'; // حتماً کلید API خود را وارد کنید
     $message = json_decode(file_get_contents('php://input'), true)['message'];
 
     if (empty($api_key)) {
